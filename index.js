@@ -1,17 +1,27 @@
 // Crea un array vacío llamado `stack`
-
+let stack = [];
 // Crea un array `numbers` con los números del 1 al 5 in orden ascendente
-
+let numbers = [1, 2, 3, 4, 5];
 // multiplica por 2 cada elemento del array `numbers` utilizando un bucle `for`
 function multiplyByTwo(numbers) {
-  // Aquí va tu código
+  const numbersMultiplied = [];
+  console.log(numbersMultiplied);
+  for (let i = 0; i < numbers.length; i++) {
+    numbersMultiplied[i] = numbers[i] * 2;
+  }
+  return numbersMultiplied;
 }
-
 // La función evenNumbers tiene que devolver los números pares del array `numbers`
 function evenNumbers(numbers) {
-  // Aquí va tu código
+  const evenNumbers = [];
+  console.log(evenNumbers);
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 == 0) {
+      evenNumbers.push(numbers[i]);
+    }
+  }
+  return evenNumbers;
 }
-
 // La función numbersBackwards tiene que devolver los números del array `numbers` en orden inverso
 function numbersBackwards(numbers) {
   // Aquí va tu código
@@ -22,7 +32,7 @@ function sum(numbers) {
   // Aquí va tu código
 }
 
-// La función `average` tiene que devolver el promedio de todos los números del array `numbers`
+// La función `average` tiene que devolver el promedio de los primeros 100 números
 function average(numbers) {
   // Aquí va tu código
 }
